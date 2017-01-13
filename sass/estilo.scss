@@ -1,0 +1,107 @@
+$cor: #001f3f;
+$cor-txt: #111;
+$cor-pdf: #ff0000;
+$cor_git: #6e5494;
+$cor_in: #0077b5;
+$cor_mail: #db3a1b;
+$cor_wpp: #25d366;
+
+@import 'compass',
+        '_fonts.global';
+
+a{
+    line-height: 200%;
+}
+
+.title{
+    color: #444;
+    font-family: 'simplifica',sans-serif;
+    text-align: center
+}
+.body{
+//  background: url(../img/bg.jpg) no-repeat;
+//    background-size: cover;
+}
+.box-content{
+    display: none;
+}
+/*Topo*/
+.content-title{
+    border-bottom: 1px solid #CCC;
+    min-height: 15%;
+    min-height: 15vh;
+}
+.home-picture{
+    border-radius: 50%;
+    display: block;
+    margin: -45px auto auto;
+    max-width: 100%;
+}
+.conteudo{
+    min-height: 75%;
+    min-height: 75vh;
+}
+.content-bio p{
+    font-family: 'Open sans', sans-serif;
+    text-align: center;
+}
+.pdf_btn{
+    background: #FFF;
+    border-radius: 2px;
+    border: 1px solid #222;
+    color: #222;
+    display: block;
+    font-family: 'Open sans', sans-serif;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    width: 180px;
+    &:hover,&:focus,&:active{
+        background: $cor-pdf;
+        border-color: #EEE;
+        color: #EEE;
+        text-decoration: none;
+    }
+}
+/*rodape com contato*/
+.content-social{
+    bottom: 0;
+    min-height: 10%;
+    min-height: 10vh;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+}
+.menu-contato{
+    background: #FEFEFE;
+    border: 1px solid #DDD;
+    color: #222;
+    display: block;
+    transition: all 0.5s linear;
+    &:hover,&:focus,&:active{
+        color: #EEE;
+        text-decoration: none;
+    }
+}
+.contato-desc{display: block;}
+.menu-git{
+    &:hover,&:focus,&:active{background: $cor_git;}
+}
+.menu-in{
+    &:hover,&:focus,&:active{background: $cor_in;}
+}
+.menu-mail{
+    &:hover,&:focus,&:active{background: $cor_mail;}
+}
+.menu-tel{
+    &:hover,&:focus,&:active{background: $cor_wpp;}
+}
+/*Menu*/
+//.btn-menu{
+//    position: relative;
+//    z-index: 3;
+//}
